@@ -5,7 +5,7 @@ on: [push]
 jobs:
   linux:
     # Job name is Greeting
-    name: test-linux
+    name: Greeting-linux
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
@@ -15,11 +15,11 @@ jobs:
       shell: bash
   osx:
       # Job name is Greeting
-      name: test-osx
+      name: Greeting-osx
       # This job runs on Linux
       runs-on: macosx-latest
       steps:
       - name: Display the path
         run: |
-          uname -a
-        shell: bash
+          echo "test"
+        shell: sh
